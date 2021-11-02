@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<title>Kushal Gurung</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="refresh" content="180" />
+	<link rel="stylesheet" href="style.css"> <!--External css-->
+
+	<!--Internal css-->
+	<style>
+			a
+			{
+				text-decoration: none;
+				color: white;
+			}
+	</style>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<nav>
+				<h1 class="brand"><a href="Home.html">☪Kus<span>hal Gurung✯</span></a></h1>
+				<ul>
+					<li><a href="Home.html" class="active">Home</a></li>
+					<li><a href="Blog.html">Blog</a></li>
+					<li><a href="CV.html">CV</a></li>
+					<li><a href="Research.html">Research</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<hr>
+		</div>
+	</header>
+
+		<banner>
+		<div class="container">
+				<div class="banner1">
+					<div class="banner2">		
+										<!-- Inline CSS-->
+						<div class="para" style="font-family: Viner Hand ITC Regular"><p><br>Welcome to my website 😊</p>
+ 						</div>
+			    	</div>
+				</div>
+
+				<h1 class="neon" data-text="||☪Kushal Gurung✯||">☪Kushal Gurung✯</h1>
+		</div>
+		</banner>
+
+		<!--Starting of footer-->
+
+		<div class="footer"> 
+		<div class="widget-footer">
+			<div class="wrap-container">
+				<div class="widgets">
+					<h4>My Contact Information</h4>
+					<p>You can contact me through: </p>
+					<p><strong>Phone: </strong>+977 9804121386</p>
+					<p><strong>Email: </strong>qoosal23.kg@gmail.com</p>
+					<p><strong>Address: </strong>Gaundakomukh-13, Pokhara</p>
+				</div>
+				
+				<form name="footerForm" onsubmit="subscribeMe()">
+				<div class="widgets">
+					<h4>Subscribe Now</h4>
+					<p>If you want to get notifications about my new cover songs in YouTube, please subscribe now.</p>
+					<p><strong>Email: </strong></p>
+					<input name="subject" type="email" class="subscribe-text" placeholder="Email address" required>
+					<br>
+					<button type="submit" class="subscribe-btn" >Subscribe</button>
+				</div>
+				</form>
+				
+				<div class="widgets">
+					<h4>Best Comments on my Website: </h4>
+					<p><strong>Golden: </strong>Wow, what a website!</p>
+					<p><strong>Adish: </strong>I admire your work brother.</p>
+					<p><strong>Roshan: </strong>Keep it up man.</p>
+					<p><strong>Sanzit: </strong>Make a tutorial video of your website.</p>
+				</div>
+				
+				<div class="widgetsIcons">
+					<h4>You can also find me on:</h4><br><br>
+					<a href="https://www.facebook.com/gurung.kushal.23" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://twitter.com/KushalG33864016" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/ksl.23/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UCO8G6rYY7_0ovrOQTK75ESA?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+					<a href="https://www.skype.com/en/" target="_blank"><i class="fab fa-skype"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="main-footer">
+			<p>Copyright &copy; 2019 | ☪Kushal Gurung✯</p>
+		</div>
+		</div>
+
+				<!--Use of JavaScript to show alert message when subscribe button is clicked in footer.-->
+				<script type="text/javascript">
+			        function subscribeMe(){
+			        	var subtext = document.forms["footerForm"]["subject"].value;
+			        	if(subtext==""){
+			        		alert("Please enter your email to subscribe.")
+			        	}
+			        	else{
+			        		alert("Thank you for subscribing to my channel. I am working on my new cover songs.")
+			        	}
+			        }
+				</script>
+</body>
+</html>

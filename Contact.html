@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<title>Kushal Gurung</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="refresh" content="180" />
+	<link rel="stylesheet" href="style.css"> <!--External css-->
+
+	<!--Internal css-->
+	<style>
+			a
+			{
+				text-decoration: none;
+				color: white;
+			}
+	</style>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<nav>
+				<h1 class="brand"><a href="Home.html">☪Kus<span>hal Gurung✯</span></a></h1>
+				<ul>
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="Blog.html">Blog</a></li>
+					<li><a href="CV.html">CV</a></li>
+					<li><a href="Research.html">Research</a></li>
+					<li><a href="Contact.html" class="active">Contact</a></li>
+				</ul>
+			</nav>
+			<hr>
+		</div>
+		<div class="wrapper1">
+				<span class="txt">Contact us freely:)</span>
+				<p><br><br><br><br><br><br>LOCATION MAP⇣</p>
+		</div>
+	</header>
+
+	<section>
+		<form name="contactForm" onsubmit="validForm()">
+		<div class="wrapperContact">
+		<div class="contact-us">
+			<div class="title">IF ANY QUERY PLEASE SEND US A MESSAGE</div>
+			<div class="input-fields">
+				<div class="items">
+					<label for="name" class="label">Name</label>
+					<input name="name" type="text" class="input" placeholder="Full name" >
+				</div>
+
+				<div class="items">
+					<label for="email" class="label">Email</label>
+					<input name="email" type="email" class="input" placeholder="Email address" required>
+				</div>
+
+				<div class="items">
+					<label for="mobile" class="label">Mobile</label>
+					<input name="mobile" type="number" class="input" placeholder="Phone Number" >
+				</div>
+
+				<div class="items">
+					<label for="message" class="label">Message</label>
+					<textarea name="message" class="text-area" placeholder="Any confusions? Please message." ></textarea>
+				</div>
+
+				<button type="Submit" class="btn">Submit</button>
+		</div>
+		</div>
+		</form>
+	</section>
+
+		<div class="map">
+			<p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2956.3793398500093!2d84.00047219999999!3d28.2149878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595ccbbd48f97%3A0x2c990c26e1e19539!2sInformatics+College+Pokhara!5e0!3m2!1sen!2snp!4v1557310765435!5m2!1sen!2snp" width="1460" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</p>
+		</div>
+
+		<!--Starting of footer-->
+
+		<div class="footer"> 
+		<div class="widget-footer">
+			<div class="wrap-container">
+				<div class="widgets">
+					<h4>My Contact Information</h4>
+					<p>You can contact me through: </p>
+					<p><strong>Phone: </strong>+977 9804121386</p>
+					<p><strong>Email: </strong>qoosal23.kg@gmail.com</p>
+					<p><strong>Address: </strong>Gaundakomukh-13, Pokhara</p>
+				</div>
+
+				<form name="footerForm" onsubmit="subscribeMe()">
+				<div class="widgets">
+					<h4>Subscribe Now</h4>
+					<p>If you want to get notifications about my new cover songs in YouTube, please subscribe now.</p>
+					<p><strong>Email: </strong></p>
+					<input name="subject" type="email" class="subscribe-text" placeholder="Email address" required>
+					<br>
+					<button type="submit" class="subscribe-btn" >Subscribe</button>
+				</div>
+				</form>
+
+				<div class="widgets">
+					<h4>Best Comments on my Website: </h4>
+					<p><strong>Golden: </strong>Wow, what a website!</p>
+					<p><strong>Adish: </strong>I admire your work brother.</p>
+					<p><strong>Roshan: </strong>Keep it up man.</p>
+					<p><strong>Sanzit: </strong>Make a tutorial video of your website.</p>
+				</div>
+				
+				<div class="widgetsIcons">
+					<h4>You can also find me on:</h4><br><br>
+					<a href="https://www.facebook.com/gurung.kushal.23" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://twitter.com/KushalG33864016" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/ksl.23/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UCO8G6rYY7_0ovrOQTK75ESA?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+					<a href="https://www.skype.com/en/" target="_blank"><i class="fab fa-skype"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-footer">
+			<p>Copyright &copy; 2019 | ☪Kushal Gurung✯</p>
+		</div>
+		</div>
+
+				<!--Javascript for Submit button in Contact page and Subscribe button in the footer.-->
+				<script type="text/javascript">
+			        function validForm()
+			        {
+			              var name =  document.forms["contactForm"]["name"].value;
+			              var mobile =  document.forms["contactForm"]["mobile"].value;
+			              var email =  document.forms["contactForm"]["email"].value;
+			              var message =  document.forms["contactForm"]["message"].value;
+
+			              if (name=="" || mobile=="" || message ==""){
+			                 alert("Please fill-up all the text fileds. Thank you.");
+			              }
+			              else {
+			                 alert("Thank you for sending us your message. We will respond to you soon as possible.");
+			              }
+			        }
+
+			        function subscribeMe(){
+			        	var subtext = document.forms["footerForm"]["subject"].value;
+			        	if(subtext==""){
+			        		alert("Please enter your email to subscribe.")
+			        	}
+			        	else{
+			        		alert("Thank you for subscribing to my channel. I am working on my new cover songs.")
+			        	}
+			        }
+				</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

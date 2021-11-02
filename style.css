@@ -1,0 +1,535 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	font-family: "Roboto Cn", sans-serif;
+}
+
+body{
+	overflow-x: hidden;
+	font-family: Arial;
+	font-size: 15px;
+	line-height: 1.5;
+	background: url(Images/Background.jpeg) no-repeat center fixed;
+	height: 100vh;
+	background-size: cover;
+	min-height: 100vh;
+	padding: 0;
+	margin:0;
+	width: 100%;
+}
+
+/**style for showing active web page.**/
+
+.active{
+	background-color: crimson;
+	opacity: 0.7;
+	border-radius: 70%;
+}
+
+/**Style for Header of all 5 pages.**/
+
+
+header{
+	color: black;
+	padding-top: 30px;
+	min-height: 90px;
+	margin-top:0px;
+	border-bottom: white 1px solid;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0px 20px 10px 20px;
+}
+
+/****Style for navigation bar****/
+
+nav{
+	padding-top: 4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	margin-top: 0px;
+}
+
+/**style for name logo in the header**/
+
+.brand{
+	font-size: 3rem;
+	font-weight: 300;
+	transform: translateX(-100rem);
+	animation: slideIn .5s forwards;
+}
+
+.brand span{
+	color: crimson;
+}
+
+nav ul{
+	display: flex;
+}
+
+nav ul li{
+	list-style: none;
+	transform: translateX(100rem);
+	animation: slideIn .5s forwards;
+	font-size: 20px;
+}
+
+nav ul li:nth-child(1){
+	animation-delay: 0s;
+}
+
+nav ul li:nth-child(2){
+	animation-delay: 0.3s;
+}
+
+nav ul li:nth-child(3){
+	animation-delay: 0.6s;
+}
+
+nav ul li:nth-child(4){
+	animation-delay: 0.9s;
+}
+
+nav ul li:nth-child(5){
+	animation-delay: 1.2s;
+}
+
+nav ul li a:hover{
+	color:yellow;
+	background-color: transparent;
+	text-decoration:none;
+}
+
+nav ul li:active{
+	color:black;
+	text-decoration:none;
+}
+
+nav ul li a{
+	padding: 1rem 0;
+	margin: 0 3rem;
+	position: relative;
+	letter-spacing: 2px;
+}
+
+nav ul li a:last-child{
+	margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: crimson;
+	left: 0;
+	transform: scaleX(0);
+	transition: all .5s;
+}
+
+nav ul li a::before{
+	top: 0;
+	transform-origin: left;
+}
+
+nav ul li a::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform: scaleX(1);
+}
+
+@keyframes slideIn{
+	from{
+		
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.banner2{
+	margin: 80px 0px 310px 30px;
+}
+
+.para p{
+	color: #fff;
+	font-size: 40px;	
+	text-align: center;
+}
+
+.neon{
+	position: absolute;
+	top: 63%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0 20px;
+	font-size:4.5em;
+	color: #fff;
+	text-shadow: 0 0 20px #4ABFD6;
+}
+
+.neon:after{
+	content:attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 20px;
+	z-index: -1;
+	color: #4ABFD6;
+	filter: blur(15px);
+}
+
+.neon:before{
+	content: '';
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #4ABFD6;
+	z-index: -2;
+	opacity: 0.5;
+	filter: blur(40px);
+}
+
+.wrapper{
+	height: 516px;
+	margin: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	font-size: 100px;
+	font-family: Viner Hand ITC Regular; 
+}
+
+.wrapper .colorchange{
+	animation: colorchangeBlog 1s infinite;
+}
+
+/**Style for Blog section**/
+
+.containerBlog{
+	margin-top:-13vh;
+	background-image: url(Images/H.png);
+	color:white;
+	margin-right : 0px;
+}
+
+.bannerBlog{
+	margin: 78px 0px 0px 30px;
+}
+
+@keyframes colorchangeBlog{
+	0%{color: crimson;}
+	25%{color: #bf55ec;}
+	50%{color: white;}
+	100%{color: skyblue;}
+}
+
+/**Style for CV section**/
+
+.containerCV{
+	margin-top:-13vh;
+	background-image: url(Images/Bloggg.jpg);
+	background-size:cover;
+	color:white;
+	margin-right : 0px;
+}
+
+.bannerCV{
+	margin: 75px 0px 0px 30px;
+}
+
+.bannerCV h1{
+	color: black;
+}
+
+.image{
+	display: flex;
+	position: center;
+	border-radius: 100%;
+	border: 2px solid black;
+}
+
+/**Style for Research section**/
+
+.containerResearch{
+	margin-top:-13vh;
+	color:white;
+	font-size:20px;
+	margin-right : 0px;
+}
+
+.bannerResearch{
+	margin: 78px 0px 0px 30px;
+}
+
+/**Style for Contact section**/
+
+.wrapper1{
+	height: 516px;
+	margin: 100px 0 0 20px;
+	display: flex;
+	align-items: left;
+	font-size: 50px;
+	font-family: Viner Hand ITC Regular; 
+}
+
+.wrapper1 .txt{
+	animation: colorchangeContact 1s infinite;
+}
+
+@keyframes colorchangeContact{
+	0%{color: crimson;}
+	25%{color: #bf55ec;}
+	50%{color: white;}
+	100%{color: skyblue;}
+}
+
+.wrapper1 p{
+	font-family: sans-serif;
+	color: crimson;
+	margin: -100px 0px 0px -400px;
+}
+
+.wrapperContact{
+	position: absolute;
+	top: 93.5%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+}
+
+.contact-us{
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	background: rgba(0,0,0,0.4);
+	padding: 20px 50px;
+	border-radius: 5px;
+	margin: -400px 0px 00px 30px;
+}
+
+.title{
+	font-size: 1.3em;
+	line-height: 1.25em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weightL 900;
+	letter-spacing: 1.8px;
+	color: #ffc107;
+	padding-bottom: 15px;
+}
+
+.input-fields{
+	padding: 0 30px;
+}
+
+.input-fields .items{
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+.input-fields .items .label{
+	display: block;
+	font-size: 1em;
+	color: #ffecb3;
+	text-transform: capitalize;
+	padding-bottom: 5px;
+}
+
+.input-fields .items .input,
+.input-fields .items .text-area{
+	background: transparent;
+	border: 0;
+	border: 1px solid #ffecb3;
+	width: 100%;
+	padding: 8px 10px;
+	font-size: 1em;
+	color: #ffecb3;
+	border-radius: 3px;
+}
+
+.input{
+	font-color: white;
+}
+
+.items #message{
+	height: 100px;
+}
+
+/**Style for Contact button**/
+
+.btn{
+	margin: 8px 0px 0px 70px;
+	background: #ffc107;
+	color: black;
+	font-size: 1.25em;
+	padding: 10px 58px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+
+.btn:hover{
+	opacity:0.6;
+	background-color:green;
+}
+
+.map{
+	margin: -100px 0px -9px 0px;
+}
+
+/**Style for footer of all 5 web pages**/
+
+.footer{
+	clear: both;
+	width: 100%;
+	height:61vh;
+	min-height: 100px;
+	background-image: url(Images/blackwood.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	overflow: hidden;
+	position: relative;
+	margin-top: 0 auto;
+	clear: both;
+	opacity: 0.9;
+}
+
+.footer .widget-footer{
+	width: 100%;
+	height: 100px;
+	min-height: 100px;
+}
+
+.footer .widgets{
+	width: 20%;
+	min-height: 220px;
+	padding: 2.5%;
+	float: left;
+}
+
+.footer .widgets h4{
+	color: white;
+	border-bottom: 1px solid rgba(0, 128, 0, 0.23);
+	font-size: 15px;
+}
+
+.footer .widgets p{
+	color: rgb(142,142,142);
+	font-size: medium;
+	margin: 8px 0px;
+}
+
+.footer .widgets strong{
+	color: white;
+}
+
+.footer .subscribe-text{
+	width: 100%;
+	border: 1px solid rgba(0,128,0,0.23);
+	border-radius: 100px;
+	height: 25px;
+}
+
+.footer .subscribe-btn{
+	border: 1px solid #d8ffe2;
+	background-image: linear-gradient(#4db345,#aef382);
+	color: #338c08;
+	font-size: 13px;
+	padding: 3px 10px;
+	border-radius: 100px;
+	margin-top: 10px;
+}
+
+.subscribe-btn:hover{
+	cursor: pointer;
+	background-image: linear-gradient(#3bad33,#baefab);
+}
+
+.footer .main-footer{
+	clear: both;
+	width: 100%;
+	height: 60px;
+	background: rgba(0,0,0,0.5);
+	font-size: 15px;
+}
+
+.footer .main-footer p{
+	color: white;
+	text-align: center;
+	padding-top: 22px;
+}
+
+/**Style for social icons in the footer.**/
+
+
+.footer .widgetsIcons {
+	position: absolute;
+	bottom:40%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+}
+
+.footer .widgetsIcons h4{
+	color: white;
+	font-size: 17px;
+}
+
+.footer .widgetsIcons a{
+	display: inline-flex; 
+	width: 50px;
+	height: 50px;
+	background: #89204A;
+	color: white;
+	margin: 0 6px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+	font-size: 24px; 
+}
+
+.wrap-container{
+	width: 100%;
+	margin: 0px auto;
+}
+
+.footer .widgetsIcons a:hover{
+	background: #4CB31F;
+}
+
+.footer .widgetsIcons a i{
+	transition: 0.4s all;
+}
+
+.footer .widgetsIcons a:hover > i{
+	transform: scale(1.6) rotate(20deg);
+}
